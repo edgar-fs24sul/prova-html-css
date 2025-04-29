@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portifolio de desenvolvedor Full Stack - Edgar Oliveira">
+    <title>Portifolio - Edgar Oliveira</title>
+    <!-- Ícone da página (favicon) -->
+    <link rel="shortcut icon" href="./assets/bxl-dev-to.svg" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Box Icons (biblioteca de ícones) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- MENU -->
+    <nav>
+        <a href="#" class="logo">MeuPortfólio</a>
+        <ul class="nav-links">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Olá, sou Desenvolvedor Full Stack</h1>
+                <p>Transformando ideias em experiências digitais incríveis</p>
+                <a href="#projetos" class="button">Ver Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-img">
+                    <img src="./assets/eu.jpeg" alt="Foto de perfil">
+                </div>
+                <div class="sobre-texto">
+                    <h3>Quem sou eu</h3>
+                    <p>Sou um desenvolvedor Full Stack apaixonado por criar soluções web inovadoras e funcionais. Com experiência em HTML, CSS, JavaScript e diversas tecnologias backend, busco sempre aprender e aplicar as melhores práticas de desenvolvimento.</p>
+                    <p>Minha jornada na programação começou há alguns anos e desde então venho desenvolvendo projetos que combinam design atraente com funcionalidade robusta. Acredito que o bom código deve ser limpo, eficiente e bem documentado.</p>
+                    <p>Quando não estou codificando, gosto de explorar novas tecnologias, contribuir em projetos open source e compartilhar conhecimento com a comunidade de desenvolvedores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid">
+                <!-- Projeto 1 -->
+                <div class="projeto-card">
+                    <div class="projeto-img">
+                        <img src="./assets/ecommerce.jpg" alt="Projeto 1">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>E-commerce Responsivo</h3>
+                        <p>Site de e-commerce completo com design responsivo, carrinho de compras e integração de pagamentos.</p>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="projeto-card">
+                    <div class="projeto-img">
+                        <img src="./assets/gerenciamento.jpg" alt="Projeto 2">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Aplicativo de Gerenciamento</h3>
+                        <p>Sistema web para gerenciamento de tarefas com autenticação de usuários e painéis personalizados.</p>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="projeto-card">
+                    <div class="projeto-img">
+                        <img src="./assets/blog.jpg" alt="Projeto 3">
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Blog de Tecnologia</h3>
+                        <p>Plataforma de blog com sistema de comentários, categorização de artigos e painel administrativo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="178d2227-af50-4230-adb6-7f66d3eb90fc">                            
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <input type="text" id="assunto" name="assunto" placeholder="Qual o Assuno?" required>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." required></textarea>
+                    </div>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <div class="form-group">
+                        <button type="submit">Enviar Mensagem</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <div class="container">
+            <ul class="footer-links">
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="socials">          
+                <a href="facebook.com"><i class="bx bxl-facebook-square"></i></a>
+                <a href="https://www.instagram.com/eadgar1978"><i class="bx bxl-instagram"></i></a>
+                <a href="https://wa.me/5585987036555?text=Ol%C3%A1,%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es!"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.youtube.com/@edgarsoliveira"><i class="bx bxl-youtube"></i></a>
+                <a href="index.html"><i class="bx bx-menu"></i></a>
+            </div>  
+            <p class="copyright">&copy; 2025 MeuPortfólio. Todos os direitos reservados.</p>            
+        </div>
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,345 @@
+/* Importa a fonte 'Montserrat' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+ body {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+p {
+    /* Estiliza parágrafos */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    /* Adiciona uma sombra sutil */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    z-index: 100;  /* Mantém acima dos outros elementos */ 
+    width: 100%;
+    background-color: #0419527c;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #3498db;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.2rem;    
+    font-weight: 500;
+    /* Suaviza transição para efeito hover */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+#hero {
+    padding-top: 150px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* Define cor de fundo com gradiente */
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    padding-bottom: 80px;
+}
+
+.hero-content {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    /* Estiliza o título principal */
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    /* Estiliza o subtítulo */
+    font-size: 1.5rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.button {
+    /* Estiliza botões */
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Adiciona transição suave para efeitos hover */
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    /* Efeito ao passar o mouse sobre o botão */
+    background-color: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#sobre {
+    background-color: white;
+}
+
+.sobre-content {
+    /* Organiza o conteúdo em duas colunas */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre-img {
+    /* Define o tamanho e estilo da imagem */
+    flex: 1;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.sobre-img img {
+    width: 90%;
+    height: auto;
+}
+
+.sobre-texto {
+    /* Define o tamanho da coluna de texto */
+    flex: 1;
+}
+
+.sobre-texto h3 {
+    /* Estiliza subtítulos */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#projetos {
+    background-color: #f9f9f9;
+}
+
+.projetos-grid {
+    /* Cria uma grade para os projetos */
+    display: grid;
+    /* Define 3 colunas com tamanhos iguais */
+    grid-template-columns: repeat(3, 1fr);
+    /* Adiciona espaçamento entre os projetos */
+    gap: 30px;
+}
+
+.projeto-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Adiciona sombra para efeito de elevação */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Adiciona transição para efeito hover */
+    transition: transform 0.3s ease;  
+}
+
+.projeto-card:hover {
+    /* transform: translateY(-10px); */
+    cursor: pointer;
+    transform: scale(1.05);
+    /* Sombra:  X   Y   Desfoque    Espessura   Cor */
+    box-shadow: 0   0   0.5rem      0.2rem      #232323;
+}
+
+.projeto-img {
+    height: 200px;
+    /* Garante que a imagem cubra todo o espaço */
+    overflow: hidden;
+}
+
+.projeto-img img {
+    /* Faz a imagem ocupar todo o espaço disponível */
+    width: 100%;
+    height: 100%;
+    /* Quando a imagem for menor que o contêiner, cobre todo o espaço */
+    object-fit: cover;
+}
+
+.projeto-info {
+    padding: 20px;
+}
+
+.projeto-info h3 {
+    /* Estiliza o título do projeto */
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+#contato {
+    background-color: white;
+}
+
+.form-grid {
+    /* Organiza o formulário em duas colunas */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.full-width {
+    /* Faz com que o elemento ocupe as duas colunas */
+    grid-column: 1 / -1;
+}
+
+button[type="submit"] {
+    padding: 12px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.socials {
+    margin: 20px;
+}
+
+.socials a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.socials a:hover {
+    background-color: #3498db;
+    color: #222;
+}
+
+
+.copyright {
+    /* Estiliza o texto de copyright */
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
